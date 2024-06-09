@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    background-image: url(books.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    padding: 20px 20px;
+    color: black;
+}
+.navitems{
+    padding-left: 78%;
+    display: flex;  
+    align-items: center;
+    margin: 0px 30px;
+}
+.fa-solid{
+    font-size: 25px;
+    color: black;
+
+}
+.contant{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: black;
+
+}
+.contant:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container{
+    max-width: 800%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.row-top{
+width: 100%;
+padding: 0px 40px;
+}
+.row-top h1{
+    text-align: center;
+    font-size: 40px;
+margin-top: 20% ;
+margin-left: 60%;
+color: black;
+width: 100%;
+}
+.row-top p{
+ text-align: center;
+ color:rgb(104, 103, 103);
+ font-size: 25px;
+ margin-top: 5%;
+ margin-left: 60%;
+ width: 100%;
+}
+.row-top button{
+    background-color: rgb(83, 165, 161);
+    color: rgb(50, 49, 49);
+    font-size: 16px;
+    border: none;
+    width: 20%;
+    margin-left: 100%;
+    margin-top: 20px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    box-shadow:  rgb(37, 36, 37) 0 0 20px 0;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+footer {
+    width: 208vh;
+    height: 30vh;
+    margin-top: 300px;
+    background-color: lightcyan;
+    padding: 20px 0;
+    color: #333;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    /* margin: 0px auto; */
+}
+.footer-container div{
+    flex: 1;
+    margin: 50px;
+    min-width: 200px;
+}
+.footer-container h4{
+    margin-bottom: 10px;
+}
+.footer-container a{
+    display: inline-block;
+    color: #0066cc;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.footer-container img{
+    height: 5vh;
+}
+.footer-container a:hover{
+    text-decoration: underline;
+}
+.subscribe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #87a6c5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.subscribe-button:hover {
+    background-color: #005bb5;
+}

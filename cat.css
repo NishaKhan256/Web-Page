@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(181, 238, 236);
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 20px 20px;
+    color: black;
+}
+.navitems{
+    /* padding-left: 40%; */
+    font-size: large;
+    display: flex;  
+    align-items: center;
+    margin: 0px 30px;
+}
+.fa-solid{
+    font-size: 25px;
+    color: black;
+
+}
+.contant{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 20px;
+    font-size: 25px;
+    color: black;
+}
+.contant:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.colunm-top img{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.textoverlay{
+ position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+}
+.textoverlay p{
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: bold;
+    box-shadow: 2px;
+    color: aliceblue;
+}
+.textoverlay button{
+    width: 25%;
+    margin-top: 5%;
+    height: 5vh;
+    background-color: transparent;
+    color:  white;
+    font-size: larger;
+}
+.textoverlay button:hover{
+    cursor: pointer;
+    background-color: black;
+    transition: 0.6s;
+    box-shadow:  rgb(37, 36, 37) 0 0 20px 0;
+    letter-spacing: 1px;
+}
+.colunm-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: auto;
+    cursor: pointer;
+
+}
+.card{
+    padding-left: 100px;
+}
+.colunm-bottom img{
+    padding:15px ;
+    width: 22%;
+    height: 60vh;
+}
+footer {
+    width: 100%;
+    height: 40vh;
+    margin-top: 200px;
+    background-color: lightcyan;
+    padding: 20px 0;
+    color: #333;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    /* margin: 0px auto; */
+}
+.footer-container div{
+    flex: 1;
+    margin: 50px;
+    min-width: 200px;
+}
+.footer-container h4{
+    margin-bottom: 10px;
+}
+.footer-container a{
+    display: inline-block;
+    color: #0066cc;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+.footer-container img{
+    height: 5vh;
+}
+.footer-container a:hover{
+    text-decoration: underline;
+}
+.subscribe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #87a6c5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.subscribe-button:hover {
+    background-color: #005bb5;
+}
