@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* padding-left: 40px; */
+    margin: 15px;
+    font-style: italic;
+}
+ul {
+    list-style-type: none;
+}
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: black;
+    padding: 10px;
+    margin: 0 15px;
+}
+
+.navbar a:hover{
+    color: #0066cc;
+}
+
+.navitem {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.fa-regular,
+h2 {
+    color: #4CAF50;
+    font-size: 30px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: perspective(300px) translateZ(30px);
+    transition: 1.0s ease-in;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.1);
+}
+/* Main Image */
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    height: 20vh;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+}
+
+.text-overlay h1 {
+    font-size: 45px;
+}
+
+.text-overlay p {
+    padding-left: 15px;
+}
+
+/* Video & Icons */
+/* Icons */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.icon-container.icons {
+    max-width: 50vw;
+    padding-right: 20px;
+}
+
+.icons ul {
+    list-style: none;
+    padding-left: 5em;
+}
+
+.icons li {
+    font-size: 30px;
+    margin: 20px 40px;
+}
+
+.icons p {
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.2rem;
+}
+
+.icons i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px;
+    font-size: 24px;
+    border: 3px solid #fff;
+    pointer-events: none;
+}
+
+/* Video */
+.container .video {
+    width: 100%;
+    /* height: 100%; */
+    padding-left: 20px;
+    padding-right: 6em;
+    padding-top: 55px;
+}
+
+.container video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Person Cards */
+.main {
+    max-width: 100%;
+    height: 100%;
+    background-color: lightcyan;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main h1 {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+
+}
+
+.card:hover{
+    transform: perspective(400px) translateZ(50px);
+    box-shadow:5px 5px 5px 2px gray;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .text {
+    padding: 15px;
+}
+
+.card .fa-twitter {
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(80, 204, 246);
+    color: white;
+    margin: 10px;
+    font-size: 14px;
+    border: 3px solid rgb(80, 204, 246);
+    pointer-events: none;
+}
+
+.card .fa-google {
+    position: absolute;
+    top: 65%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    font-size: 14px;
+    border: 3px solid red;
+    pointer-events: none;
+}
+
+/* Description Text */
+.description {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #4CAF50;
+    padding-top: 50px;
+}
+
+.fa-solid {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.desc h1 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.desc pre {
+    color: white;
+}
+
+.fa-ellipsis {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* Blog section */
+.blog {
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+.main-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+}
+
+.fa-window-minimize {
+    font-size: 40px;
+}
+
+.fa-circle {
+    font-size: 5px;
+    color: #4CAF50;
+    padding: 5px;
+}
+ 
+.desc-card {
+    display: inline;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+    gap: 20px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.desc-card:hover{
+    box-shadow:5px 5px 5px 2px gray;
+   transform: perspective(400px) translateZ(50px);
+}
+
+.desc-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.text-para h1{
+    line-break: loose;
+    margin: 20px 0 10px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.read {
+    padding-left: 80px;
+}
+
+.read .fa-ellipsis{
+    color: #4CAF50;
+}
+
+.head {
+    padding-right: 80px;
+    color: lightseagreen;
+}
+.head i{
+    color: lightseagreen;
+}
+
+/* Languages */
+.language-card {
+   flex-wrap: wrap;
+   gap: 20px;
+   width: 100%;
+   /* padding: 20px; */
+}
+
+.language-container h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.language h5{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.language-card.language{
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    margin: 20px 15px 40px;
+}
+
+.Main-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; 
+}
+
+.language img:hover{
+    cursor: pointer;
+    transition: .6s;
+    transform: translateY(-15px);
+}
+.language img{
+    height:100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+/* Footer */
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+    max-width: 100%;
+    /* height: 20vh; */
+    background-color: rgb(177, 204, 205);
+}
+/* Saasflix */
+.saasflix p:hover{
+    color: #0066cc;
+}
+
+.saasflix{
+    cursor: pointer;
+}
+/* Support & Company */
+.support , .company{
+    list-style: none;
+    padding: 10px;
+    transition: color 0.3s,
+ }
+
+  h4{
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: #4CAF50;
+
+     }
+ 
+.footer-container li:hover{
+    cursor: pointer;
+    color: #0066cc;
+    text-decoration: underline;
+}
+/* Newsletter */
+.newsletter{
+    position: relative;
+    width: 30%;
+}
+
+input[type="email"]{
+    max-width: 50%;
+    height: 5vh;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    height: 5vh;
+    width: 30%;
+    background-color: #4CAF50;
+    border: none;
+}
+
+input[type="button"]:hover{
+    transform: perspective(300px) translateZ(30px);
+    transition: 1.0s ease-in;
+    /* box-shadow:2px 2px 2px 2px #959393; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.1);
+    background-color: #2294ed;
+    cursor: pointer;
+}
+.fa-envelope{
+    position: absolute;
+    color: black;
+    left: 5px;
+    top: 90px;
+    transform: translateY(-50px);
+    font-size: 18px;
+}
+
+/* Social */
+.social-icons{
+    padding-right: 50px;
+    
+}
+
+.social-icons a{
+    color: rgb(74, 73, 73);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.social-icons a:hover{
+    color: #0066cc;
+}
+
+
