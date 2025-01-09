@@ -1,0 +1,96 @@
+button {
+    background-color:rgb(224, 138, 184); 
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 14px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05); 
+  }
+  
+  button:active {
+    transform: scale(0.95); 
+  }
+  
+  /* Container to hold the entire counter */
+
+  h1 {
+    font-size: 40px;
+   padding: 20px;
+
+  }
+
+.counter-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ac3c6e, #574387); 
+    border-radius: 12px;
+  }
+  
+  /* Centering the textarea and stats */
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: rgb(240, 144, 176);
+    color: #050505;
+    resize: none;
+  }
+  
+  /* Stat boxes layout */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .stat {
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .stat p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+
+  }
+  
+  .stat span {
+    display: block;
+    font-size: 1.7rem;
+  }
+  
+  /* Adjustments to handle layout in smaller screens */
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+    }
+  
+    .stat {
+      margin-bottom: 20px;
+    }
+  }
+  
